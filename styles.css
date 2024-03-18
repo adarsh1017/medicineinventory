@@ -1,0 +1,158 @@
+/* styles/styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, ul, li, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set body font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container for the page content */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styles */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 50%; /* Set width to 50% for half length */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block; /* Display each input on a new line */
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Cart button styles */
+  .cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .cart-button:hover {
+    background-color: darkblue;
+  }
+  
+  .cart-count {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  
+  /* Cart modal styles */
+  .cart-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Set a wider maximum width for the cart modal */
+    width: 80%; /* Set a percentage width for responsiveness */
+    max-height: 400px; /* Set a fixed height for the cart modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .cart-modal ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .cart-modal button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cart-modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cart item styles */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add margin between cart items */
+  }
+  
+  /* Style the individual medicine name and quantity */
+  .cart-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis for overflowing text */
+  }
